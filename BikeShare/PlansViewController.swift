@@ -37,11 +37,13 @@ class PlansViewController: UIViewController{
     super.viewDidLoad()
     setupView()
     
-    manager.fetchPricePlan { (plans) in
-      var plan = plans
-      plan.swapAt(0, 5)
-      self.pricePlans = plan
-      self.tableView.reloadData()
+    if pricePlans.count == 0 {
+      manager.fetchPricePlan { (plans) in
+        var plan = plans
+        plan.swapAt(0, 5)
+        self.pricePlans = plan
+        self.tableView.reloadData()
+      }
     }
   }
   
