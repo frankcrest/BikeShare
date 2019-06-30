@@ -10,7 +10,6 @@
 		256378B122985BE1005E52A8 /* FavoritesCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 256378AB22985BE1005E52A8 /* FavoritesCell.swift */; };
 		256378B222985BE1005E52A8 /* FavoritesDetailController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 256378AC22985BE1005E52A8 /* FavoritesDetailController.swift */; };
 		256378B322985BE1005E52A8 /* FavoritesViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 256378AD22985BE1005E52A8 /* FavoritesViewController.swift */; };
-		256378B422985BE1005E52A8 /* InfoBike.swift in Sources */ = {isa = PBXBuildFile; fileRef = 256378AE22985BE1005E52A8 /* InfoBike.swift */; };
 		256378B522985BE1005E52A8 /* PricePlan.swift in Sources */ = {isa = PBXBuildFile; fileRef = 256378AF22985BE1005E52A8 /* PricePlan.swift */; };
 		256378B622985BE1005E52A8 /* RefreshButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 256378B022985BE1005E52A8 /* RefreshButton.swift */; };
 		25BCF6DC229707010049340F /* PlansViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 25BCF6D6229707000049340F /* PlansViewController.swift */; };
@@ -37,7 +36,6 @@
 		256378AB22985BE1005E52A8 /* FavoritesCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FavoritesCell.swift; sourceTree = "<group>"; };
 		256378AC22985BE1005E52A8 /* FavoritesDetailController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FavoritesDetailController.swift; sourceTree = "<group>"; };
 		256378AD22985BE1005E52A8 /* FavoritesViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FavoritesViewController.swift; sourceTree = "<group>"; };
-		256378AE22985BE1005E52A8 /* InfoBike.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = InfoBike.swift; sourceTree = "<group>"; };
 		256378AF22985BE1005E52A8 /* PricePlan.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PricePlan.swift; sourceTree = "<group>"; };
 		256378B022985BE1005E52A8 /* RefreshButton.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RefreshButton.swift; sourceTree = "<group>"; };
 		25BCF6D6229707000049340F /* PlansViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PlansViewController.swift; sourceTree = "<group>"; };
@@ -125,7 +123,6 @@
 				256378AB22985BE1005E52A8 /* FavoritesCell.swift */,
 				256378AC22985BE1005E52A8 /* FavoritesDetailController.swift */,
 				256378AD22985BE1005E52A8 /* FavoritesViewController.swift */,
-				256378AE22985BE1005E52A8 /* InfoBike.swift */,
 				256378AF22985BE1005E52A8 /* PricePlan.swift */,
 				256378B022985BE1005E52A8 /* RefreshButton.swift */,
 				25BCF6DA229707010049340F /* PlansCell.swift */,
@@ -266,7 +263,6 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				256378B422985BE1005E52A8 /* InfoBike.swift in Sources */,
 				E9FAFE9A229DD39C0073F508 /* StationStatusStruct.swift in Sources */,
 				256378B322985BE1005E52A8 /* FavoritesViewController.swift in Sources */,
 				256378B522985BE1005E52A8 /* PricePlan.swift in Sources */,
@@ -441,7 +437,7 @@
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = com.Weblay.BikeShare;
+				PRODUCT_BUNDLE_IDENTIFIER = com.westguards.bikeshare;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE_SPECIFIER = "";
 				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
@@ -465,7 +461,7 @@
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = com.Weblay.BikeShare;
+				PRODUCT_BUNDLE_IDENTIFIER = com.westguards.bikeshare;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE_SPECIFIER = "";
 				SWIFT_VERSION = 4.2;
