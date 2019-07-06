@@ -8,6 +8,7 @@
 //
 
 import UIKit
+import SVProgressHUD
 
 class PlansViewController: UIViewController{
   
@@ -18,11 +19,18 @@ class PlansViewController: UIViewController{
                       "Use your Presto Pass to get access to the TIXIE system for one year",
                       "Get TIXIE for Toronto and enjoy your access to the system for one year",
                       "Get TIXIE for available cities and get access to the system for one year",
-                      ]
-
+  ]
+  
   let imageNames = ["piggy","coin","coins","money","ingot","ingots"]
   
-  var pricePlans = [Plan]()
+  let plan1 = Plan(name: "Single Trip", price: "3.25")
+  let plan2 = Plan(name: "24 Hour", price: "7.00")
+  let plan3 = Plan(name: "72 Hour", price: "15.00")
+  let plan4 = Plan(name: "Annual PRESTO", price: "79.20")
+  let plan5 = Plan(name: "City of Toronto", price: "90.00")
+  let plan6 = Plan(name: "Annual", price: "99.00")
+  
+  lazy var pricePlans = [plan1, plan2, plan3, plan4, plan5, plan6]
   
   let tableView : UITableView = {
     let tableView = UITableView()
@@ -36,18 +44,9 @@ class PlansViewController: UIViewController{
   override func viewDidLoad() {
     super.viewDidLoad()
     setupView()
-    
-    if pricePlans.count == 0 {
-      manager.fetchPricePlan { (plans) in
-        var plan = plans
-        plan.swapAt(0, 5)
-        self.pricePlans = plan
-        self.tableView.reloadData()
-      }
-    }
   }
-  
-  override func viewWillAppear(_ animated: Bool) {
+    
+    override func viewWillAppear(_ animated: Bool) {
     super.viewWillAppear(animated)
     
     self.navigationController?.navigationBar.isHidden = false
